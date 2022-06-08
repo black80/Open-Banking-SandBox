@@ -3,7 +3,7 @@ name: Develop CI
 on:
   push:
     branches:
-      - develop
+      - master
 
 env:
   SONAR_PRJ_KEY: adorsys_XS2A-Sandbox

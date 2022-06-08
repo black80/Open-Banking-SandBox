@@ -103,23 +103,23 @@ build-java-services: ## Build java services
 build-ui-services: npm-install-tpp-ui npm-install-oba-ui ## Build ui services
 
 npm-install-tpp-ui: tpp-ui/package.json tpp-ui/package-lock.json ## Install TPP-UI NPM dependencies
-	cd tpp-ui && npm install && npm run build
+	cd tpp-ui && npm install --legacy-peer-deps && npm run build
 
 npm-install-oba-ui: oba-ui/package.json oba-ui/package-lock.json ## Install OBA-UI NPM dependencies
-	cd oba-ui && npm install && npm run build
+	cd oba-ui && npm install --legacy-peer-deps && npm run build
 
 npm-install-developer-portal-ui: developer-portal-ui/package.json developer-portal-ui/package-lock.json ## Install DEV-PORTAL-UI NPM dependencies
-	cd developer-portal-ui && npm install && npm run build
+	cd developer-portal-ui && npm install --legacy-peer-deps && npm run build
 
 ## Unit tests section
 unit-tests-all-frontend: unit-tests-oba-ui unit-tests-tpp-ui
 
 unit-tests-oba-ui:
-	cd oba-ui && npm install && npm run test-ci
+	cd oba-ui && npm install --legacy-peer-deps && npm run test-ci
 unit-tests-tpp-ui:
-	cd tpp-ui && npm install && npm run test-ci
+	cd tpp-ui && npm install --legacy-peer-deps && npm run test-ci
 unit-tests-developer-portal-ui:
-	cd developer-portal-ui && npm install && npm run test-ci
+	cd developer-portal-ui && npm install --legacy-peer-deps && npm run test-ci
 
 unit-tests-backend:
 	mvn --settings scripts/mvn-release-settings.xml -DskipITs --fail-at-end clean install
