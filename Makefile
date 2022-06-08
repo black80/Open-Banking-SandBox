@@ -35,7 +35,7 @@ install-for-MacOS:
 
 # Lint section
 
-lint-all: lint-dockerfiles lint-tpp-ui lint-oba-ui lint-developer-portal-ui lint-tpp-rest-server lint-online-banking lint-docker-compose lint-pmd-cpd-report #lint all services
+lint-all: lint-dockerfiles lint-tpp-ui lint-oba-ui  lint-tpp-rest-server lint-online-banking lint-docker-compose lint-pmd-cpd-report #lint all services
 
 lint-dockerfiles:
 	docker run --rm -i hadolint/hadolint < tpp-ui/Dockerfile
@@ -100,7 +100,7 @@ all: lint-all build-ui-services build-java-services unit-tests-all-frontend unit
 build-java-services: ## Build java services
 	mvn -ntp --settings scripts/mvn-release-settings.xml -DskipTests clean package -Dci.build.number=Build\:${CI_PIPELINE_ID}
 
-build-ui-services: npm-install-tpp-ui npm-install-oba-ui npm-install-developer-portal-ui ## Build ui services
+build-ui-services: npm-install-tpp-ui npm-install-oba-ui ## Build ui services
 
 npm-install-tpp-ui: tpp-ui/package.json tpp-ui/package-lock.json ## Install TPP-UI NPM dependencies
 	cd tpp-ui && npm ci && npm install && npm run build
@@ -112,7 +112,7 @@ npm-install-developer-portal-ui: developer-portal-ui/package.json developer-port
 	cd developer-portal-ui && npm ci && npm install && npm run build
 
 ## Unit tests section
-unit-tests-all-frontend: unit-tests-oba-ui unit-tests-tpp-ui unit-tests-developer-portal-ui
+unit-tests-all-frontend: unit-tests-oba-ui unit-tests-tpp-ui
 
 unit-tests-oba-ui:
 	cd oba-ui && npm ci && npm install && npm run test-ci
