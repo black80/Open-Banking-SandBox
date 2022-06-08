@@ -8,7 +8,7 @@ $light-grey: #a0a0a0;
 $light-grey-10: #f8f8f8;
 $btn-text-color: #f6f6f6;
 $dark-80: #2c2e2f;
-$green: #059c85;
+$green: #17305e;
 
 /*
  * CSS Variables: Used for whitelabel customization
@@ -92,24 +92,24 @@ $green: #059c85;
   --button-heigh: 56px;
   --btn-padding: 15px 12px;
 
-  --buttonBgGradient1: #13b4bf;
-  --buttonBgGradient2: #0a8f70;
+  --buttonBgGradient1: #17305e;
+  --buttonBgGradient2: #17305e;
   --buttonBG: linear-gradient(
     129.54deg,
     var(--buttonBgGradient1) 0%,
     var(--buttonBgGradient2) 100%
   );
 
-  --buttonHoveredGradient1: #059c85;
-  --buttonHoveredGradient2: #0a8f70;
+  --buttonHoveredGradient1: #17305e;
+  --buttonHoveredGradient2: #17305e;
   --buttonHovered: linear-gradient(
     129.54deg,
     var(--buttonHoveredGradient1) 0%,
     var(--buttonHoveredGradient2) 100%
   );
 
-  --buttonClickedGradient1: #13b4bf;
-  --buttonClickedGradient2: #008073;
+  --buttonClickedGradient1: #17305e;
+  --buttonClickedGradient2: #17305e;
   --buttonClicked: linear-gradient(
     129.54deg,
     var(--buttonClickedGradient1) 0%,
