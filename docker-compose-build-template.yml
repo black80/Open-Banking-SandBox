@@ -24,3 +24,9 @@ services:
     build:
       context: tpp-app/tpp-rest-server
       dockerfile: Dockerfile
+
+  # Developer portal ui
+  developer-portal-ui:
+    build:
+      context: developer-portal-ui
+      dockerfile: Dockerfile

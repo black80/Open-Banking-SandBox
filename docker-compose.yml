@@ -223,6 +223,20 @@ services:
     volumes:
       - xs2a-tpp-rest-server-data:/var/lib/data
 
+  # Developer portal ui
+  developer-portal-ui:
+    image: adorsys/xs2a-bank-devportal:${SANDBOX_VERSION}
+    restart: on-failure
+    ports:
+      - "4206:4206"
+    networks:
+      - xs2a-net
+    depends_on:
+      - xs2a-connector-examples
+    environment:
+      - XS2A_URL=http://xs2a-connector-examples:8089
+      - ASPSP_URL=http://xs2a-aspsp-profile:8080
+
   # Certificate generator
   certificate-generator:
     image: adorsys/xs2a-certificate-generator:${XS2A_CONSENT_MANAGEMENT_VERSION}
