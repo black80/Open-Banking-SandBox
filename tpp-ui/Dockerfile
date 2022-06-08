@@ -7,7 +7,7 @@ ENV NGINX_ERROR_LOG_DEBUG error
 
 RUN \
   apt-get update && \
-  sudo apt-get -y install ruby2.5-dev --no-install-recommends \
+  apt-get -y install ruby2.5-dev --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 COPY ./nginx.conf.erb /etc/nginx/conf.d/default.conf.erb
