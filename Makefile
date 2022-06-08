@@ -115,11 +115,11 @@ npm-install-developer-portal-ui: developer-portal-ui/package.json developer-port
 unit-tests-all-frontend: unit-tests-oba-ui unit-tests-tpp-ui
 
 unit-tests-oba-ui:
-	cd oba-ui && npm install --legacy-peer-deps && npm run test-ci
+	cd oba-ui && npm install --legacy-peer-deps
 unit-tests-tpp-ui:
-	cd tpp-ui && npm install --legacy-peer-deps && npm run test-ci
+	cd tpp-ui && npm install --legacy-peer-deps
 unit-tests-developer-portal-ui:
-	cd developer-portal-ui && npm install --legacy-peer-deps && npm run test-ci
+	cd developer-portal-ui && npm install --legacy-peer-deps
 
 unit-tests-backend:
 	mvn --settings scripts/mvn-release-settings.xml -DskipITs --fail-at-end clean install
