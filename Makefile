@@ -45,7 +45,7 @@ lint-dockerfiles:
 	docker run --rm -i hadolint/hadolint < online-banking/online-banking-app/Dockerfile
 
 lint-tpp-ui:
-	find tpp-ui -type f -name "*.json" -not -path "tpp-ui/node_modules/*" -exec jsonlint -q {} \; # lint all json
+	find tpp-ui -type f -name "*.json" -not -path "tpp-ui/node_modules/*" -exec jsonlint-php -q {} \; # lint all json
 	find tpp-ui -type f \( -name "*.yml" -o -name "*.yaml" \) -exec yamllint -d "{extends: relaxed, rules: {line-length: {max: 160}}}" {} \;
 	find tpp-ui -type f \( -iname "*.xml" ! -iname pom.xml \) -exec xmllint --noout {} \;
 	#cd tpp-ui && npm ci && npm install
@@ -54,7 +54,7 @@ lint-tpp-ui:
 
 lint-oba-ui:
 	cd oba-ui
-	find oba-ui -type f -name "*.json" -not -path "oba-ui/node_modules/*" -exec jsonlint -q {} \; # lint all json
+	find oba-ui -type f -name "*.json" -not -path "oba-ui/node_modules/*" -exec jsonlint-php -q {} \; # lint all json
 	find oba-ui -type f \( -name "*.yml" -o -name "*.yaml" \) -exec yamllint -d "{extends: relaxed, rules: {line-length: {max: 160}}}" {} \;
 	find oba-ui -type f \( -iname "*.xml" ! -iname pom.xml \) -exec xmllint --noout {} \;
 	#cd oba-ui && npm ci && npm install
@@ -62,7 +62,7 @@ lint-oba-ui:
 	#cd oba-ui && npm run prettier-check
 
 lint-developer-portal-ui:
-	find developer-portal-ui -type f -name "*.json" -not -path "developer-portal-ui/node_modules/*" -exec jsonlint -q {} \; # lint all json
+	find developer-portal-ui -type f -name "*.json" -not -path "developer-portal-ui/node_modules/*" -exec jsonlint-php -q {} \; # lint all json
 	find developer-portal-ui -type f \( -name "*.yml" -o -name "*.yaml" \) -exec yamllint -d "{extends: relaxed, rules: {line-length: {max: 160}}}" {} \;
 	find developer-portal-ui -type f \( -iname "*.xml" ! -iname pom.xml \) -exec xmllint --noout {} \;
 	cd developer-portal-ui && npm ci && npm install
@@ -70,12 +70,12 @@ lint-developer-portal-ui:
 	cd developer-portal-ui && npm run prettier-check
 
 lint-tpp-rest-server:
-	find tpp-app -type f -name "*.json" -exec jsonlint -q {} \; # lint all json
+	find tpp-app -type f -name "*.json" -exec jsonlint-php -q {} \; # lint all json
 	find tpp-app -type f \( -name "*.yml" -o -name "*.yaml" \) -exec yamllint -d "{extends: relaxed, rules: {line-length: {max: 160}}}" {} \;
 	find tpp-app -type f \( -iname "*.xml" ! -iname pom.xml \) -exec xmllint --noout {} \;
 
 lint-online-banking:
-	find online-banking -type f -name "*.json" -exec jsonlint -q {} \; # lint all json
+	find online-banking -type f -name "*.json" -exec jsonlint-php -q {} \; # lint all json
 	find online-banking -type f \( -name "*.yml" -o -name "*.yaml" \) -exec yamllint -d "{extends: relaxed, rules: {line-length: {max: 160}}}" {} \;
 	find online-banking -type f \( -iname "*.xml" ! -iname pom.xml \) -exec xmllint --noout {} \;
 
