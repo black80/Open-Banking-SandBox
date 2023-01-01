@@ -1,4 +1,4 @@
-# Copyright 2018-2018 adorsys GmbH & Co KG
+# Copyright 2018-2018 OFIN
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ license.url: https://github.com/adorsys/xs2a/blob/master/LICENSE.md
 
 skip.ssl.certificate.verification: true
 
-# For now this must be the same as the property configured in 
+# For now this must be the same as the property configured in
 # user-service.jwt.hs256.secret from /ledgers-app/src/main/resources/application.yml
 online-banking.sca:
   jwt.hs256.secret: 6VFX8YFQG5DLFKZIMNLGH9P406XR1SY4
@@ -66,4 +66,4 @@ feign:
       default:
         loggerLevel: HEADERS
 
-logging.level.de.adorsys.ledgers.middleware: DEBUG        
+logging.level.de.adorsys.ledgers.middleware: DEBUG

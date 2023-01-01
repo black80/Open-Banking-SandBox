@@ -75,8 +75,8 @@ public class SwaggerConfig {
 
     private ApiInfo metaData() {
 
-        Contact contact = new Contact("Adorsys GmbH", "https://www.adorsys.de",
-                                      "fpo@adorsys.de");
+        Contact contact = new Contact("OFIN", "https://www.ofin.co",
+                                      "fpo@ofin.co");
 
         return new ApiInfo(
             "Online banking",

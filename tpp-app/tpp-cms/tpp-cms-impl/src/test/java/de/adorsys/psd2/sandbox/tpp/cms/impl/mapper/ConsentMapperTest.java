@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2023 OFIN 
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -61,7 +61,7 @@ class ConsentMapperTest {
     private static final String CITY = "Nurnberg";
     private static final String STATE = "Bavaria";
     private static final TppRedirectUri TPP_CANCEL_URI = new TppRedirectUri("http://gmail.com", "http://unknown.com");
-    private static final ThirdPartyRedirectUri TP_REDIRECT_URI = new ThirdPartyRedirectUri("http://adorsys.de", "http://google.com");
+    private static final ThirdPartyRedirectUri TP_REDIRECT_URI = new ThirdPartyRedirectUri("http://ofin.co", "http://google.com");
     private static final ThirdPartyRedirectUri TP_CANCEL_URI = new ThirdPartyRedirectUri("http://gmail.com", "http://unknown.com");
     private static final String ISSUER_CN = "Some issuer";
     private static final String ACC1_ID = "DE12345";

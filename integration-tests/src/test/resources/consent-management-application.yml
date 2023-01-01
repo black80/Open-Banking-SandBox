@@ -1,5 +1,5 @@
 #
-# Copyright 2018-2018 adorsys GmbH & Co KG
+# Copyright 2018-2018 OFIN
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -101,7 +101,7 @@ spring:
       hibernate.default_schema: public
   # SpringBoot 2.x react to this liquibase proprty
   liquibase:
-    enabled: true 
+    enabled: true
     change-log: classpath:/master.xml
 db:
   user: sa
@@ -110,7 +110,7 @@ db:
 
 # SpringBoot 1.x react to this liquibase property
 liquibase:
-  enabled: true 
+  enabled: true
   change-log: classpath:/master.xml
 ---
 spring:
@@ -121,7 +121,7 @@ spring:
   # SpringBoot 2.x react to this liquibase property
   liquibase:
     default-schema: consent
-    enabled: true 
+    enabled: true
     change-log: classpath:/master.xml
 db:
   host: localhost
@@ -130,11 +130,11 @@ db:
   database: consent
   port: 5432
   url: jdbc:postgresql://${db.host}:${db.port}/${db.database}?currentSchema=consent
-  
+
 # SpringBoot 1.x react to this liquibase property
 liquibase:
   default-schema: consent
-  enabled: true 
+  enabled: true
   change-log: classpath:/master.xml
 
 ---

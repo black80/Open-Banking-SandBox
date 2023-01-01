@@ -50,8 +50,8 @@ public class TppSwaggerConfig {
                                 .description("TPP backend application of PSD2 Sandbox Environment")
                                 .contact(new Contact(
                                     "OFIN KSA",
-                                    "https://adorsys.de",
-                                    "fpo@adorsys.de")
+                                    "https://ofin.co",
+                                    "fpo@ofin.co")
                                 )
                                 .version(buildProperties.getVersion() + " " + buildProperties.get("build.number"))
                                 .build())

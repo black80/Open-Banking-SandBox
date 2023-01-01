@@ -60,7 +60,7 @@ public class ConsentEmbeddedUnknownUser  extends AbstractConsentEmbedded {
 			ResponseEntity<UpdatePsuAuthenticationResponse> loginResponseWrapper = consentHelper.login(createConsentResp);
 		} catch(FeignException f) {
 			// TODO:  Middleware return not found. SPI design does not allow
-			// pass thru of code. https://git.adorsys.de/adorsys/xs2a/aspsp-xs2a/issues/629
+			// pass thru of code. https://git.ofin.co/adorsys/xs2a/aspsp-xs2a/issues/629
 			//			Assert.assertEquals(HttpStatus.NOT_FOUND.value(), f.status());
 			Assert.assertEquals(HttpStatus.UNAUTHORIZED.value(), f.status());
 		}
