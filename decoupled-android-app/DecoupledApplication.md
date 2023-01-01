@@ -7,7 +7,7 @@
    OnlineBanking backend URL hint:
 
     - **Localhost** - you'll need to input the OnlineBanking IP address Example: <u>**http://192.168.1.100:8090**</u>
-    - **Dedicated installation** - just use your Example: <u>**https://onlinebanking.adorsys.de**</u>
+    - **Dedicated installation** - just use your Example: <u>**https://onlinebanking.ofin.co**</u>
 
 3. After that you can press the LOGIN button.
 

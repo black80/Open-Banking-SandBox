@@ -1,6 +1,6 @@
 {
   "/oba-proxy/*": {
-    "target": "https://dev-modelbank-oba-backend.cloud.adorsys.de",
+    "target": "https://dev-modelbank-oba-backend.cloud.ofin.co",
     "secure": true,
     "changeOrigin": true,
     "ws": true,
@@ -10,4 +10,3 @@
     }
   }
 }
-

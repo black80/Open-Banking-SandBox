@@ -127,7 +127,7 @@ Here is a general instruction on how to customize any user interface in ModelBan
             oc login- Navigate to the Openshift project.
         -   We select the development environment for our example.
         -   Please choose one of the following:
-            oc project adorsys-dynamic-sandbox-dev- Copy the customisation files to the running Developer Portal UI application pod: - oc cp ./logo.png $(oc get pods |grep "developerportalui" |awk '{print $1}'):/usr/share/nginx/html/assets/UI/custom/ - oc cp ./contact.png $(oc get pods |grep "developerportalui" |awk '{print $1}'):/usr/share/nginx/html/assets/UI/custom/ - oc cp ./ $(oc get pods |grep "developerportalui" |awk '{print $1}'):/usr/share/nginx/html/assets/UI/custom/
+            oc project OFIN-dynamic-sandbox-dev- Copy the customisation files to the running Developer Portal UI application pod: - oc cp ./logo.png $(oc get pods |grep "developerportalui" |awk '{print $1}'):/usr/share/nginx/html/assets/UI/custom/ - oc cp ./contact.png $(oc get pods |grep "developerportalui" |awk '{print $1}'):/usr/share/nginx/html/assets/UI/custom/ - oc cp ./ $(oc get pods |grep "developerportalui" |awk '{print $1}'):/usr/share/nginx/html/assets/UI/custom/
 6.  Customization completed, congratulations!
 
 ### Common CSS properties
@@ -525,10 +525,10 @@ Here is a detailed example json for Developer portal:
             "ua": "ukraine.png"
         },
         "socialMedia": {
-            "facebook": "https://www.facebook.com/adorsysGmbH",
-            "twitter": "https://twitter.com/adorsys",
-            "xing": "https://www.xing.com/companies/adorsysgmbh%26cokg",
-            "linkedin": "https://www.linkedin.com/company/adorsys"
+            "facebook": "https://www.facebook.com/ofin-ksa",
+            "twitter": "https://twitter.com/OFIN",
+            "xing": "https://www.xing.com/companies/ofin-ksa%26cokg",
+            "linkedin": "https://www.linkedin.com/company/OFIN"
         },
         "googleAnalyticsTrackingId": "UA-160845388-1"
     },
@@ -538,23 +538,23 @@ Here is a detailed example json for Developer portal:
                 "img": "Rene.png",
                 "name": "René Pongratz",
                 "position": "Software Architect & Expert for API Management",
-                "email": "psd2@adorsys.de"
+                "email": "psd2@ofin.co"
             },
             "officesInfo": [
                 {
                     "city": "Nürnberg",
-                    "company": "adorsys GmbH & Co. KG",
+                    "company": "OFIN KSA",
                     "addressFirstLine": "Fürther Str. 246a, Gebäude 32 im 4.OG",
                     "addressSecondLine": "90429 Nürnberg",
                     "phone": "+49(0)911 360698-0",
-                    "email": "psd2@adorsys.de"
+                    "email": "psd2@ofin.co"
                 },
                 {
                     "city": "Frankfurt",
-                    "company": "adorsys GmbH & Co. KG",
+                    "company": "OFIN KSA",
                     "addressFirstLine": "Frankfurter Straße 63 - 69",
                     "addressSecondLine": "65760 Eschborn",
-                    "email": "frankfurt@adorsys.de"
+                    "email": "frankfurt@ofin.co"
                 }
             ]
         },
@@ -563,7 +563,7 @@ Here is a detailed example json for Developer portal:
                 "img": "Rene.png",
                 "name": "René Pongratz",
                 "position": "Software Architect & Expert for API Management",
-                "email": "psd2@adorsys.de"
+                "email": "psd2@ofin.co"
             },
             "showProductHistory": true,
             "showSlider": true
@@ -581,7 +581,7 @@ Here is a detailed example json for Developer portal:
             "examplesCurrency": "EUR",
             "tppSettings": {
                 "tppDefaultNokRedirectUrl": "https://www.google.com",
-                "tppDefaultRedirectUrl": "https://adorsys-platform.de/solutions/xs2a-sandbox/"
+                "tppDefaultRedirectUrl": "https://ofin.co/solutions/xs2a-sandbox/"
             }
         }
     }
@@ -623,7 +623,7 @@ Additional properties for Developer Portal:
 | examplesCurrency         | Main currency of developer portal examples. When you input a currency, all the jsons currencies are changed to the desired currency.                                         | playWithDataSettings                    | -                                                                             | All currency values in ISO standard. Default configuration is "EUR"                  | Yes      |
 | tppSettings              | Settings related to a particular TPP using the ModelBank                                                                                                                       | playWithDataSettings                    | tppDefaultNokRedirectUrl, tppDefaultRedirectUrl                               | child properties                                                                     | Yes      |
 | tppDefaultNokRedirectUrl | TPP not OK link, used in all XS2A requests in `Play with data` section and related to XS2A standard header for Redirect SCA approach `TPP-Nok-Redirect-URI`                  | tppSettings                             | -                                                                             | Https url. Default value is `https://www.google.com`                                 | Yes      |
-| tppDefaultRedirectUrl    | TPP not OK link, used in all XS2A requests in `Play with data` section and related to XS2A standard header for Redirect SCA approach `TPP-Redirect-URI`                      | tppSettings                             | -                                                                             | Https url. Default value is `https://adorsys-platform.de/solutions/xs2a-sandbox/`    | Yes      |
+| tppDefaultRedirectUrl    | TPP not OK link, used in all XS2A requests in `Play with data` section and related to XS2A standard header for Redirect SCA approach `TPP-Redirect-URI`                      | tppSettings                             | -                                                                             | Https url. Default value is `https://ofin.co/solutions/xs2a-sandbox/`    | Yes      |
 
 ### Additional CSS properties for Developer Portal
 
@@ -871,7 +871,7 @@ Type `redirect` means that the page would redirect to an external link on click.
 ```json
 {
     "navName": "Contact",
-    "route": "https://adorsys.de",
+    "route": "https://ofin.co",
     "type": "redirect"
 }
 ```

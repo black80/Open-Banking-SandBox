@@ -24,7 +24,7 @@ market.
 We would like to thank all our users for their trust so far and are convinced that we will be
 able to provide an even better service going forward.
 For more information, advice for your XS2A implementation project or if your use case
-requires more time to adapt this change, please contact us at psd2@adorsys.com.
+requires more time to adapt this change, please contact us at info@ofin.co.
 
 For additional details please see the section **“FAQ on Licensing Change”**.
 
@@ -82,7 +82,7 @@ Any person is free to join us by implementing some parts of code or fixing some 
 
 If you think that our system behaves in an unexpected way or incorrect, or you need some clarifications, to contact ModelBank Team please [create an issue](https://github.com/adorsys/XS2A-Sandbox/issues). Team will provide comments and feedback there.
 
-For commercial support please contact [adorsys Team](https://adorsys-platform.de/solutions/).
+For commercial support please contact [adorsys Team](https://ofin.co/solutions/).
 
 ## License
 
@@ -142,7 +142,7 @@ us to obtain a commercial license.
 **What if I cannot adjust to the new licensing model until 01.01.2022? Can I extend the deadline?**
 
 We understand that adjustment to licensing changes can take time and therefore are open to discuss
-extension options on an individual basis. For inquiries please contact us as psd2@adorsys.com.
+extension options on an individual basis. For inquiries please contact us as info@ofin.co.
 
 **Which versions of the product are affected?**
 
@@ -168,4 +168,4 @@ change affect me?**
 
 The licensing change does not affect you as user, but it is relevant to your provider who has used our
 product in their solution implementation. In case of uncertainty please contact your service provider
-or approach us at psd2@adorsys.com.
+or approach us at info@ofin.co.

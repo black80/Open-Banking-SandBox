@@ -13,7 +13,7 @@ NOTE: If you have already registered a TPP and created a PSU user with deposit a
 === OAuth Integrated Consent
 
 [start=1]
-. Click on: https://dev-dynamicsandbox-tppui.cloud.adorsys.de/login and register a new TPP account.
+. Click on: https://dev-dynamicsandbox-tppui.cloud.OFIN.co/login and register a new TPP account.
 . Login with the new registered TPP, click on _My user list_ and create a new user. In our example it is _aguex8_, with the pin _aguex8_ and the static TAN _123456_.
 . Create for this user at least one deposit account with a generated IBAN.
 . Now open Postman and import the collection "postman_collection_oauth_pre-step_integrated.json" and the environment "Xs2a DEV ENV.postman_environment.json" from our postman-scripts. Then, switch environment to `Xs2a DEV ENV`.
@@ -36,7 +36,7 @@ NOTE: Check that there is no key "code" in Headers at step 12.
 === OAuth Pre-Step Consent
 [start=1]
 
-. Click on: https://dev-dynamicsandbox-tppui.cloud.adorsys.de/login and register a new TPP account.
+. Click on: https://dev-dynamicsandbox-tppui.cloud.OFIN.co/login and register a new TPP account.
 . Login with the new registered TPP, click on _My user list_ and create a new user. In our example it is _aguex8_, with the pin _aguex8_ and the static TAN _123456_.
 . Create for this user at least one account with a generated IBAN.
 . Now open Postman and import the collection "postman_collection_oauth_pre-step_integrated.json" and the environment "Xs2a DEV ENV.postman_environment.json" from our postman-scripts. Then, switch environment to `Xs2a DEV ENV`.
@@ -51,7 +51,7 @@ NOTE: Check that there is no key "code" in Headers at step 12.
     {
         "category": "ERROR",
         "code": "UNAUTHORIZED",
-        "text": "Please retrieve token first from https://dev-dynamicsandbox-onlinebanking.cloud.adorsys.de/oauth/authorization-server"
+        "text": "Please retrieve token first from https://dev-dynamicsandbox-onlinebanking.cloud.OFIN.co/oauth/authorization-server"
     }
   ]
 }

@@ -251,10 +251,10 @@ The table of options and possible configurations you can find below:
 | $JAVA_OPTS_OBA | Online banking | XS2A_URL | http://localhost:8089 | Mandatory URL to XS2A
 | | | LEDGERS_URL | http://localhost:8088 |
 | | | CMS_URL | http://localhost:8080 |
-| | | ONLINE_BANKING_SCA_LOGINPAGE | https://demo-dynamicsandbox-onlinebankingui-cloud-adorsys.de/ (example) | Online-banking page, to which user would be redirected in Redirect approach
+| | | ONLINE_BANKING_SCA_LOGINPAGE | https://demo-dynamicsandbox-onlinebankingui-cloud-OFIN.co/ (example) | Online-banking page, to which user would be redirected in Redirect approach
 | | | ONLINE_BANKING_SCA_UIREDIRECT | true, false | ModelBank uses "true" as a value in this configuration
 | | | MANAGEMENT_ENDPOINTS_WEB_CORS_ALLOWED_METHODS | GET,POST,PUT,DELETE,OPTIONS,PATCH | CORS settings
-| | | MANAGEMENT_ENDPOINTS_WEB_CORS_ALLOWED_ORIGINS | https://demo-dynamicsandbox-onlinebankingui-cloud-adorsys.de | CORS settings
+| | | MANAGEMENT_ENDPOINTS_WEB_CORS_ALLOWED_ORIGINS | https://demo-dynamicsandbox-onlinebankingui-cloud-OFIN.co | CORS settings
 | $JAVA_OPTS_TPP | TPP REST server | LEDGERS_URL | http://localhost:8088 |
 | | | SPRING_DATASOURCE_URL | jdbc:postgresql://localhost/cms |
 | | | SPRING_DATASOURCE_USERNAME | cmsdb |

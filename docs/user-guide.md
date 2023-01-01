@@ -32,5 +32,5 @@ reset-password:
   email:
     template-message: "Please use this code %s to reset your password"
     subject: "Your code for password reset"
-    from: noreply@adorsys.de
+    from: noreply@ofin.co
 ```

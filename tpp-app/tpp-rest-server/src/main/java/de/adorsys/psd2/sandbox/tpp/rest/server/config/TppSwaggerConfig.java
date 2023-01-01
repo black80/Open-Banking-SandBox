@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 package de.adorsys.psd2.sandbox.tpp.rest.server.config;
@@ -49,7 +49,7 @@ public class TppSwaggerConfig {
                                 .title("TPP backend application")
                                 .description("TPP backend application of PSD2 Sandbox Environment")
                                 .contact(new Contact(
-                                    "Adorsys GmbH & Co. KG",
+                                    "OFIN KSA",
                                     "https://adorsys.de",
                                     "fpo@adorsys.de")
                                 )

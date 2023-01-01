@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
@@ -59,7 +59,7 @@ describe('AuthorizeComponent', () => {
   });
 
   const correctOauthParams: OauthCodeUsingPOSTParams = {
-    redirectUri: 'https://adorsys.de',
+    redirectUri: 'https://ofin.co',
     pin: 'pin',
     login: 'login',
   };
@@ -72,7 +72,7 @@ describe('AuthorizeComponent', () => {
     expect(component.customizeService).toBeTruthy();
   });
 
-  // TODO fix this line and add removed tests https://git.adorsys.de/adorsys/xs2a/psd2-dynamic-sandbox/issues/475
+  // TODO fix this line and add removed tests https://git.ofin.co/OFIN/xs2a/psd2-dynamic-sandbox/issues/475
   // it('should call oAuthService on submit', () => {
   //   expect(oAuthService).toBeTruthy();
   //   spyOn(oAuthService, 'authorize').and.returnValue(of(correctOauthParams));

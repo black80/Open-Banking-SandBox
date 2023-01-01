@@ -25,7 +25,7 @@ Figure 1.1: Components of the ModelBank
 
 # XS2A Interface
 
-Central component of the **ModelBank** is the XS2A interface which meets the requirements of the Berlin Group's specification [NextGenPSD2](https://www.berlin-group.org/psd2-access-to-bank-accounts) (Version 1.3) and is based on test data. You can visit our [XS2A Swagger UI](https://demo-dynamicsandbox-xs2a.cloud.adorsys.de/) or find full [OpenSource XS2A Interface on Github](https://github.com/adorsys/xs2a).
+Central component of the **ModelBank** is the XS2A interface which meets the requirements of the Berlin Group's specification [NextGenPSD2](https://www.berlin-group.org/psd2-access-to-bank-accounts) (Version 1.3) and is based on test data. You can visit our [XS2A Swagger UI](https://demo-dynamicsandbox-xs2a.cloud.ofin.co/) or find full [OpenSource XS2A Interface on Github](https://github.com/OFIN/xs2a).
 
 <div class="divider">
 </div>
@@ -152,7 +152,7 @@ Check amount of memory given to Docker (Open Docker Desktop -> Preferences -> Ad
 
 Download the project directly from GitHub or use command:
 
-_git clone https://github.com/adorsys/XS2A-Sandbox_
+_git clone https://github.com/OFIN/XS2A-Sandbox_
 
 **Note2:**
 Always make a pull from GitHub

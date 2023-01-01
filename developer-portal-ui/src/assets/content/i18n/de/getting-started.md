@@ -25,7 +25,7 @@ Abbildung 1.1: Komponenten der ModelBank
 
 # XS2A-Schnittstelle
 
-Der Zentrale Bestandteil der **ModelBank** ist die XS2A-Schnittstelle, die gemäß der Spezifikation der Berlin Group [NextGenPSD2](https://www.berlin-group.org/psd2-access-to-bank-accounts) (Version 1.3) implementiert wurde und auf Testdaten basiert. Mehr Details finden Sie in unsere [XS2A Swagger UI](https://demo-dynamicsandbox-xs2a.cloud.adorsys.de/) und der [OpenSource XS2A Schnittstelle auf Github](https://github.com/adorsys/xs2a).
+Der Zentrale Bestandteil der **ModelBank** ist die XS2A-Schnittstelle, die gemäß der Spezifikation der Berlin Group [NextGenPSD2](https://www.berlin-group.org/psd2-access-to-bank-accounts) (Version 1.3) implementiert wurde und auf Testdaten basiert. Mehr Details finden Sie in unsere [XS2A Swagger UI](https://demo-dynamicsandbox-xs2a.cloud.ofin.co/) und der [OpenSource XS2A Schnittstelle auf Github](https://github.com/OFIN/xs2a).
 
 # ASPSP-Profile
 
@@ -143,7 +143,7 @@ _docker-compose rm -s -f -v_
 
 Laden Sie das Projekt direkt von GitHub herunter oder nutzen Sie folgenden Befehl:
 
-_git clone https://github.com/adorsys/XS2A-Sandbox_
+_git clone https://github.com/OFIN/XS2A-Sandbox_
 
 **Note:**
 Ziehen Sie immer an GitHub
@@ -269,32 +269,32 @@ Hier ein Json Beispiel:
 {
   "globalSettings": {
     "logo": "Logo_XS2ASandbox.png",
-    "facebook": "https://www.facebook.com/adorsysGmbH/",
-    "linkedIn": "https://www.linkedin.com/company/adorsys-gmbh-&-co-kg/"
+    "facebook": "https://www.facebook.com/ofin-ksa/",
+    "linkedIn": "https://www.linkedin.com/company/ofin-ksa/"
   },
   "contactInfo": {
     "img": "Rene.png",
     "name": "René Pongratz",
     "position": "Software Architect & Expert for API Management",
-    "email": "psd2@adorsys.de"
+    "email": "psd2@ofin.co"
   },
   "officesInfo": [
     {
       "city": "Nürnberg",
-      "company": "adorsys GmbH & Co. KG",
+      "company": "OFIN KSA",
       "addressFirstLine": "Fürther Str. 246a, Gebäude 32 im 4.OG",
       "addressSecondLine": "90429 Nürnberg",
       "phone": "+49(0)911 360698-0",
-      "email": "psd2@adorsys.de"
+      "email": "psd2@ofin.co"
     },
     {
       "city": "Frankfurt",
-      "company": "adorsys GmbH & Co. KG",
+      "company": "OFIN KSA",
       "addressFirstLine": "Frankfurter Straße 63 - 69",
       "addressSecondLine": "65760 Eschborn",
-      "email": "frankfurt@adorsys.de",
-      "facebook": "https://www.facebook.com/adorsysGmbH/",
-      "linkedIn": "https://www.linkedin.com/company/adorsys-gmbh-&-co-kg/"
+      "email": "frankfurt@ofin.co",
+      "facebook": "https://www.facebook.com/ofin-ksa/",
+      "linkedIn": "https://www.linkedin.com/company/ofin-ksa/"
     }
   ],
   "supportedLanguages": ["en", "de", "es", "ua"],
@@ -302,7 +302,7 @@ Hier ein Json Beispiel:
   "currency": "EUR",
   "tppSettings": {
     "tppDefaultNokRedirectUrl": "https://www.google.com",
-    "tppDefaultRedirectUrl": "https://adorsys-platform.de/solutions/xs2a-sandbox/"
+    "tppDefaultRedirectUrl": "https://ofin.co/solutions/xs2a-sandbox/"
   }
 }
 ```

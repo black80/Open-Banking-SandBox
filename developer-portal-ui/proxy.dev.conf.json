@@ -1,6 +1,6 @@
 {
   "/xs2a-proxy/*": {
-    "target": "https://dev-modelbank-xs2a-connector.cloud.adorsys.de",
+    "target": "https://dev-modelbank-xs2a-connector.cloud.ofin.co",
     "secure": true,
     "changeOrigin": true,
     "logLevel": "debug",
@@ -9,7 +9,7 @@
     }
   },
   "/aspsp-proxy/*": {
-    "target": "https://dev-modelbank-xs2a-aspsp-profile.cloud.adorsys.de",
+    "target": "https://dev-modelbank-xs2a-aspsp-profile.cloud.ofin.co",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug",

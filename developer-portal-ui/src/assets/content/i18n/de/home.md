@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col-2"></div>
 <div class="col-4">
-<h1>Developer Portal <br/> von adorsys <br/></h1><br/><h2> Entwickeln neuer, digitaler <br/> Dienstleistungen durch
+<h1>Developer Portal <br/> von OFIN <br/></h1><br/><h2> Entwickeln neuer, digitaler <br/> Dienstleistungen durch
  <br/> Open Banking
 </h2>
 </div>

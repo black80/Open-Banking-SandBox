@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 import { Component, OnDestroy, OnInit } from '@angular/core';
@@ -48,7 +48,7 @@ import { TooltipPosition } from '@angular/material/tooltip';
   templateUrl: './account-list.component.html',
   styleUrls: ['./account-list.component.scss'],
 })
-// TODO Merge UsersComponent, TppsComponent and AccountListComponent into one single component https://git.adorsys.de/adorsys/xs2a/psd2-dynamic-sandbox/-/issues/713
+// TODO Merge UsersComponent, TppsComponent and AccountListComponent into one single component https://git.ofin.co/OFIN/xs2a/psd2-dynamic-sandbox/-/issues/713
 export class AccountListComponent implements OnInit, OnDestroy {
   admin: string;
   users: User[] = [];
