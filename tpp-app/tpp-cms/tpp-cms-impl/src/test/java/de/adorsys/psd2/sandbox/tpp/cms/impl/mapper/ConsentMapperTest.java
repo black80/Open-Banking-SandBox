@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 package de.adorsys.psd2.sandbox.tpp.cms.impl.mapper;
@@ -61,7 +61,7 @@ class ConsentMapperTest {
     private static final String CITY = "Nurnberg";
     private static final String STATE = "Bavaria";
     private static final TppRedirectUri TPP_CANCEL_URI = new TppRedirectUri("http://gmail.com", "http://unknown.com");
-    private static final ThirdPartyRedirectUri TP_REDIRECT_URI = new ThirdPartyRedirectUri("http://adorsys.de", "http://google.com");
+    private static final ThirdPartyRedirectUri TP_REDIRECT_URI = new ThirdPartyRedirectUri("http://ofin.co", "http://google.com");
     private static final ThirdPartyRedirectUri TP_CANCEL_URI = new ThirdPartyRedirectUri("http://gmail.com", "http://unknown.com");
     private static final String ISSUER_CN = "Some issuer";
     private static final String ACC1_ID = "DE12345";

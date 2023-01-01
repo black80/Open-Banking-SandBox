@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
@@ -78,7 +78,7 @@ describe('UserDetailsComponent', () => {
   it('should get user by Id', () => {
     let mockUser: User = {
       id: 'XXXXXX',
-      email: 'tes@adorsys.de',
+      email: 'tes@ofin.co',
       login: 'bob',
       branch: '',
       pin: '12345',
@@ -139,7 +139,7 @@ describe('UserDetailsComponent', () => {
   it('should load users on NgOnInit', () => {
     let mockUser: User = {
       id: 'XXXXXX',
-      email: 'tes@adorsys.de',
+      email: 'tes@ofin.co',
       login: 'bob',
       branch: '',
       pin: '12345',

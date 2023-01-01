@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 package de.adorsys.ledgers.xs2a.test.ctk.embedded;
@@ -60,7 +60,7 @@ public class ConsentEmbeddedUnknownUser  extends AbstractConsentEmbedded {
 			ResponseEntity<UpdatePsuAuthenticationResponse> loginResponseWrapper = consentHelper.login(createConsentResp);
 		} catch(FeignException f) {
 			// TODO:  Middleware return not found. SPI design does not allow
-			// pass thru of code. https://git.adorsys.de/adorsys/xs2a/aspsp-xs2a/issues/629
+			// pass thru of code. https://git.ofin.co/adorsys/xs2a/aspsp-xs2a/issues/629
 			//			Assert.assertEquals(HttpStatus.NOT_FOUND.value(), f.status());
 			Assert.assertEquals(HttpStatus.UNAUTHORIZED.value(), f.status());
 		}

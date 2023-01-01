@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 /*
@@ -41,7 +41,7 @@ import java.util.UUID;
 @Api(value = "v1", description = "funds confirmation API")
 public interface FundsConfirmationApiClient {
 
-    // TODO: fix this after https://git.adorsys.de/adorsys/xs2a/aspsp-xs2a/issues/648 addressed
+    // TODO: fix this after https://git.ofin.co/adorsys/xs2a/aspsp-xs2a/issues/648 addressed
     @ApiOperation(value = "Confirmation of Funds Request", nickname = "checkAvailabilityOfFunds", notes = "Creates a confirmation of funds request at the ASPSP. Checks whether a specific amount is available at point of time of the request on an account linked to a given tuple card issuer(TPP)/card number, or addressed by IBAN and TPP respectively", response = InlineResponse200.class, tags = {})
     @ApiResponses(value = {
         @ApiResponse(code = 200, message = "OK", response = InlineResponse200.class),

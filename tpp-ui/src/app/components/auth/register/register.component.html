@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2018-2022 adorsys GmbH & Co KG
+  ~ Copyright 2019-2023 OFIN
   ~
   ~ This program is free software: you can redistribute it and/or modify it
   ~ under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
   ~ along with this program. If not, see https://www.gnu.org/licenses/.
   ~
   ~ This project is also available under a separate commercial license. You can
-  ~ contact us at psd2@adorsys.com.
+  ~ contact us at info@ofin.co.
   -->
 
 <div class="bg-sm-light sticky-top" *ngIf="!admin">
@@ -49,11 +49,11 @@
               *ngIf="!admin; else adminCreate"
             >
               <h2 class="card-title font-weight-bold">
-                <span *ngIf="!customizeService.isCustom()">adorsys </span>TPP UI
+                <span *ngIf="!customizeService.isCustom()">OFIN </span>TPP UI
               </h2>
               <div class="my-4 card__subtitle">
                 Please register in order to use
-                <span *ngIf="!customizeService.isCustom()">adorsys </span>TPP UI
+                <span *ngIf="!customizeService.isCustom()">OFIN </span>TPP UI
               </div>
             </div>
 

@@ -1,6 +1,6 @@
 {
   "/ledgers/*": {
-    "target": "https://dev-modelbank-ledgers.cloud.adorsys.de",
+    "target": "https://dev-modelbank-ledgers.cloud.ofin.co",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug",
@@ -8,9 +8,8 @@
       "^/ledgers": ""
     }
   },
-
   "/certgen/*": {
-    "target": "https://dev-modelbank-certificate-generator.cloud.adorsys.de",
+    "target": "https://dev-modelbank-certificate-generator.cloud.ofin.co",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug",
@@ -18,9 +17,8 @@
       "^/certgen": ""
     }
   },
-
   "/tpp/*": {
-    "target": "https://dev-modelbank-tpp-backend.cloud.adorsys.de",
+    "target": "https://dev-modelbank-tpp-backend.cloud.ofin.co",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug",

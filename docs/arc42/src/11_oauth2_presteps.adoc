@@ -19,7 +19,7 @@ image::../images/oauth2_pre-authentication.png[Flow of oAuth2 with pre-Authentic
 These steps are for the developer environment and not the DEMO.
 
 [start=1]
-. Click on https://dev-dynamicsandbox-tppui.cloud.adorsys.de/login and create new TPP account. For our example we named the TPP _tppoauth_.
+. Click on https://dev-dynamicsandbox-tppui.cloud.OFIN.co/login and create new TPP account. For our example we named the TPP _tppoauth_.
 
 . Login with the new TPP _tppoauth_ and click on "My user list".
 
@@ -27,7 +27,7 @@ These steps are for the developer environment and not the DEMO.
 
 . Create a new deposit account with a generated IBAN for the user _oauth_.
 
-. Open following link in your browser: https://dev-dynamicsandbox-onlinebankingui.cloud.adorsys.de/auth/authorize?redirect_uri=https:%2F%2Fgoogle.com
+. Open following link in your browser: https://dev-dynamicsandbox-onlinebankingui.cloud.OFIN.co/auth/authorize?redirect_uri=https:%2F%2Fgoogle.com
 (with this step you receive the auth code)
 
 . Login/Authorize there as user _oauth_.
@@ -54,7 +54,7 @@ NOTE: Check that there is no key "code" in Headers at step 10.
 
 . Press the Next and afterwards the Send button and confirm the consent with the user’s static TAN.
 
-. Open the OBA UI https://dev-dynamicsandbox-onlinebankingui.cloud.adorsys.de and login as user _oauth_.
+. Open the OBA UI https://dev-dynamicsandbox-onlinebankingui.cloud.OFIN.co and login as user _oauth_.
 
 . By clicking on "Consents" and the new created consent can be seen in the list.
 

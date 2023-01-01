@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2022 adorsys GmbH & Co KG
+ * Copyright 2019-2023 OFIN
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published
@@ -13,7 +13,7 @@
  * along with this program. If not, see https://www.gnu.org/licenses/.
  *
  * This project is also available under a separate commercial license. You can
- * contact us at psd2@adorsys.com.
+ * contact us at info@ofin.co.
  */
 
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
@@ -57,37 +57,37 @@ describe('AppComponent', () => {
           footerBG: '#054f72',
           footerFontColor: '#ffffff',
         },
-        facebook: 'https://www.facebook.com/adorsysGmbH/',
-        linkedIn: 'https://www.linkedin.com/company/adorsys-gmbh-&-co-kg/',
+        facebook: 'https://www.facebook.com/ofin-ksa/',
+        linkedIn: 'https://www.linkedin.com/company/ofin-ksa/',
       },
       contactInfo: {
         img: 'Rene.png',
         name: 'René Pongratz',
         position: 'Software Architect & Expert for API Management',
-        email: 'psd2@adorsys.de',
+        email: 'psd2@ofin.co',
       },
       officesInfo: [
         {
           city: 'Nürnberg',
-          company: 'adorsys GmbH & Co. KG',
+          company: 'OFIN KSA',
           addressFirstLine: 'Fürther Str. 246a, Gebäude 32 im 4.OG',
           addressSecondLine: '90429 Nürnberg',
           phone: '+49(0)911 360698-0',
-          email: 'psd2@adorsys.de',
+          email: 'psd2@ofin.co',
         },
         {
           city: 'Frankfurt',
-          company: 'adorsys GmbH & Co. KG',
+          company: 'OFIN KSA',
           addressFirstLine: 'Frankfurter Straße 63 - 69',
           addressSecondLine: '65760 Eschborn',
-          email: 'frankfurt@adorsys.de',
-          facebook: 'https://www.facebook.com/adorsysGmbH/',
-          linkedIn: 'https://www.linkedin.com/company/adorsys-gmbh-&-co-kg/',
+          email: 'frankfurt@ofin.co',
+          facebook: 'https://www.facebook.com/ofin-ksa/',
+          linkedIn: 'https://www.linkedin.com/company/ofin-ksa/',
         },
       ],
       tppSettings: {
         tppDefaultNokRedirectUrl: 'https://www.google.com',
-        tppDefaultRedirectUrl: 'https://adorsys-platform.de/solutions/xs2a-sandbox/',
+        tppDefaultRedirectUrl: 'https://ofin.co/solutions/xs2a-sandbox/',
       },
       supportedLanguages: ['en', 'ua', 'de', 'es'],
       pagesSettings: {

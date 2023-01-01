@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col-2"></div>
 <div class="col-4">
-<h1>Portal de desarrolladores <br/> pro adorsys <br/></h1><br/><h2> Creando nuevos, digitales <br/> servicios a través de Open
+<h1>Portal de desarrolladores <br/> pro OFIN <br/></h1><br/><h2> Creando nuevos, digitales <br/> servicios a través de Open
  <br/> Banking
 </h2>
 </div>
